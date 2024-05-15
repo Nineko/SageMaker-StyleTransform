@@ -154,7 +154,7 @@ def train(args):
                                 content_img, style_img, input_img,content_layers_default,style_layers_default,
                                 num_steps = args.num_steps)
 
-    save_image_to_s3(model_output,'sagemaker-us-east-1-851725197925','Result/result.jpg')
+    save_image_to_s3(model_output,'s3-bucket-name','Result/result.jpg')
 
 if __name__ == "__main__":
 
